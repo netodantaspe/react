@@ -3,6 +3,41 @@ import './App.css';
 import react from './components';
 import principal from './components';
 import BemVindos from './components/BemVindos';
+import React, { useState } from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+
+const [count, setCount] = useState(0);
+
+<Route path=”/home” component={HomeComponente} />
+
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors=require('cors');
+
+const app = express();
+const porta = 3000;
+
+app.use(cors());
+
+app.get('/book',(req,res)=>{
+red.send("Olá express")
+});
+
+app.list(porta, () => {console.log("servidor rodando na porta 8080')})
+
+
+
+
+
+
+function BemVindos(props) {
+return (
+  <div>
+    <p>Fala aí {props.nome}, bem vindo!</p>
+  </div>
+)
+}
+export default BemVindos;
 
 function App() {
   return (
